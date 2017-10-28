@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Canvas Image Effects</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+	<script src="imageEffects.js" type="text/javascript"></script>
+	<script src="effectsTest.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+	<style type="text/css">
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+#imageEffects {
+	display: block;
+}
+#colorAdj {
+	background-color:#fff;
+	width: 40px;
+	height: 20px;
+	border: 2px solid #666666;
+	display: inline-block;
+}
+	</style>
+</head>
+<body>
+<div id="container">
+<p>Canvas image effects</p>
+	<div id="controls">
+		<label for="imageFile">cross-banner.jpg</label>
+		<button name="imageFile" id="imageFile">Load Image</button>
+		<button id="viewImage">View Image</button>
+		<button id="invert">Invert</button>
+		<button id="desaturate">Desaturate</button>
+		<button id="threshold">Threshold</button>
+		<button id="brightness">Brightness</button>
+		<button id="contrast">Contrast</button>
+		<button id="fastGaus">Fast Gaus</button>
+		<button id="blur">Box Blur</button>
+		<button id="sharpen">Sharpen</button>
+		<button id="convolve">Convolve</button>
+		<div id="colorAdj" class="color"></div>
+		<button id="tint">Tint</button>
+		<button id="linearGradient">Gradient</button>
+		<button id="vignette">Vignette</button>
+		<select id="blendMode">
+			<option>darken</option>
+			<option>multiply</option>
+			<option>colorBurn</option>
+			<option>linearBurn</option>
+			<option>lighten</option>
+			<option>screen</option>
+			<option>colorDodge</option>
+			<option>linearDodge</option>
+			<option>overlay</option>
+			<option>softLight</option>
+			<option>hardLight</option>
+			<option>vividLight</option>
+			<option>linearLight</option>
+			<option>pinLight</option>
+			<option>difference</option>
+			<option>exclusion</option>
+			<option>subtract</option>
+			<option>divide</option>
+		</select>
+		<button id="blend">Blend</button>
+	</div>
+	<br/>
+	<div style="" id="imageEffects"></div>
+</div>
+</body>
+</html>
