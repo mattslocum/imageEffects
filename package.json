@@ -1,0 +1,22 @@
+{
+  "name": "imageEffects",
+  "version": "1.0.0",
+  "repository": {},
+  "author": "Matt Slocum",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.2.15",
+    "awesome-typescript-loader": "^3.2.3",
+    "expose-loader": "^0.7.5",
+    "typescript": "^2.5.3",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
